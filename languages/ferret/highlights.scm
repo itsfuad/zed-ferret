@@ -1,7 +1,9 @@
 (line_comment) @comment
-(block_comment) @comment
+(block_comment) @comment.doc
 
 (string_literal) @string
+(char_literal) @constant
+(byte_literal) @constant
 (number_literal) @number
 (boolean_literal) @boolean
 (none_literal) @constant.builtin
