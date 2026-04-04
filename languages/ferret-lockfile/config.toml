@@ -3,7 +3,7 @@ grammar = "ferret_lockfile"
 path_suffixes = ["ferret.lock"]
 first_line_pattern = "^\\s*\\{"
 line_comments = []
-icon = "json"
+icon = "lockfile.svg"
 tab_size = 2
 hard_tabs = false
 
