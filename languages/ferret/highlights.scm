@@ -220,6 +220,9 @@
 (typed_parameter
   name: (identifier) @variable.parameter)
 
+(lambda_parameter
+  name: (identifier) @variable.parameter)
+
 (type_parameter
   name: (identifier) @type)
 
