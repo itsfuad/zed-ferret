@@ -147,17 +147,17 @@
     (scoped_identifier
       name: (identifier) @type)))
 
-(map_literal
+(typed_composite_literal
   type: (map_type) @type)
 
-(map_literal
+(typed_composite_literal
   type: (named_type (identifier) @type))
 
-(map_literal
+(typed_composite_literal
   type: (generic_type
     name: (identifier) @type))
 
-(map_literal
+(typed_composite_literal
   type: (generic_type
     name: (scoped_identifier
       name: (identifier) @type)))
