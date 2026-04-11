@@ -33,7 +33,6 @@
   "comptime"
   "take"
   "catch"
-  "is"
   "as"
   "defer"
   "release"
@@ -44,6 +43,8 @@
 ] @keyword
 
 (move) @keyword
+(is) @keyword
+(map) @keyword
 
 [
   "="
@@ -109,9 +110,11 @@
     name: (scoped_identifier
       name: (identifier) @type)))
 
-(named_type (identifier) @type)
+(named_type (identifier) @type
+ (#not-eq? @type "map"))
 (generic_type
-  name: (identifier) @type)
+  name: (identifier) @type
+  (#not-eq? @type "map"))
 (generic_type
   name: (scoped_identifier
     name: (identifier) @type))
@@ -152,7 +155,7 @@
   "f32" "f64" "void"))
 
 ((identifier) @keyword
- (#eq? @keyword "self"))
+ (#any-of? @keyword "self" "is" "map"))
 
 (function_declaration
   name: (identifier) @function)
