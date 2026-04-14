@@ -44,7 +44,7 @@ Zed LSP settings are read from `ferretls` via:
 
 Command launch configuration is read separately from `lsp.ferretls.binary`.
 
-The current `Ferret-compiler-v2/compiler/cmd/ferret` CLI exposes an `lsp` subcommand, so no external server binary is required by default.
+The current `Ferret-compiler-v2/compiler/cmd` CLI exposes an `lsp` subcommand, so no external server binary is required by default.
 
 
 ## Steps to Update an Extension Submodule
